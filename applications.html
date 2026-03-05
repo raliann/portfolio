@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applications | Ralitsa Raykova</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <svg width="24" height="24" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg" class="rainbow-logo">
+                <path d="M 2.5 32 A 14.5 30 0 0 1 31.5 32" fill="none" stroke="#ffd6e7" stroke-width="2.5"
+                    stroke-linecap="round" />
+                <path d="M 6.5 32 A 10.5 25 0 0 1 27.5 32" fill="none" stroke="#dcd6ff" stroke-width="2.5"
+                    stroke-linecap="round" />
+                <path d="M 10.5 32 A 6.5 20 0 0 1 23.5 32" fill="none" stroke="#d6e9ff" stroke-width="2.5"
+                    stroke-linecap="round" />
+                <path d="M 14.5 32 A 2.5 15 0 0 1 19.5 32" fill="none" stroke="#dff5e1" stroke-width="2.5"
+                    stroke-linecap="round" />
+            </svg>
+            Ralitsa Raykova
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="applications.html">Applications</a>
+            <a href="games.html">Games</a>
+            <a href="webapp.html">Web App</a>
+            <a href="graphics.html">Graphics</a>
+        </div>
+    </nav>
+
+    <section class="page">
+
+        <h1>Applications</h1>
+
+        <p class="page-intro">
+            This section presents applications developed using C# and Windows Forms, focusing on structure, usability,
+            and logical problem-solving.
+        </p>
+
+        <!-- PROJECTS -->
+        <div class="project">
+
+            <h2>Naming numbers in Bulgarian</h2>
+            <p>
+                A C# Windows Forms application which helps foreign students learn numbers from 1 to 9999 in
+                Bulgarian,
+                by typing a number in and choosing if they want to see it written or hear its pronounciation.
+            </p>
+            <div class="project-content">
+                <div class="project-media">
+                    <!-- IMAGE 
+                    <img src="assets/images/numbers in bg.png" class="project-img">
+                    -->
+
+                    <!-- VIDEO -->
+                    <video controls class="project-video">
+                        <source src="assets/videos/numbers in bg.mp4" type="video/mp4">
+                    </video>
+
+                    <!-- DOWNLOAD -->
+                    <a href="assets/apps/NumberNames.exe" class="download">Download application</a>
+                </div>
+                <div class="project-text">
+                    <p>
+                        Users are asked to to type in a number. Option 1 allows them to see how this number is written.
+                        Option
+                        two allows them to hear its pronounciation real time. Option 3 displays the written form of the
+                        number
+                        and plays its pronounciation at the same time. Users are allowed to repeat the audio form of a
+                        number by
+                        clicking the button on the right.
+                    </p>
+                </div>
+            </div>
+            <p>
+                This project has helped me improve my logical thinking and problem-solving skills. It has taught me
+                about the structure of the Bulgarian language and how words are formed, following different patterns,
+                depending on the length of the number. Through this process, I developed a deeper understanding of
+                morphological agreement, compound number formation, and linguistic exceptions. Instead of memorizing
+                forms, I learned to see language as a structured system governed by patterns and rules.
+
+            </p>
+            <p>
+                I have also learned new C# components and data structures. For example, I learned how to add sound files
+                to a program, how to store them and play them. In addition, I discovered new ways to store and organize
+                data, such as using arrays and lists, which helped me to create a more efficient and organized program.
+            </p>
+
+        </div>
+
+        <!--Long number calculator-->
+        <div class="project">
+
+            <h2>Long number calculator</h2>
+            <p>
+                A C# Windows Forms application designed to add and substract numbers, which are too large to fit
+                in
+                normal numeral variable types.
+            </p>
+            <div class="project-content">
+                <div class="project-media">
+                    <!-- IMAGE 
+                    <img src="assets/images/numbers in bg.png" class="project-img"> -->
+
+                    <!-- VIDEO -->
+                    <video controls class="project-video">
+                        <source src="assets/videos/calculator.mp4" type="video/mp4">
+                    </video>
+
+                    <!-- DOWNLOAD -->
+                    <a href="assets/apps/LongNumbersCalculator.exe" class="download">Download application</a>
+                </div>
+                <div class="project-text">
+                    <p>
+                        Users should type in two numbers in the white boxes on the top of the interface. They can choose
+                        their
+                        desired operation from the drop list on the left of the boxes. Whenever the "=" button is
+                        clicked, the
+                        result is calculated. The button at the bottom of the form allows users to clear all text boxes
+                        and use
+                        the calculator again.
+                    </p>
+                    <p>
+                        Developing my long number calculator program strengthened my understanding of how computers
+                        represent
+                        and manipulate numerical data at a fundamental level. Since standard numeric data types cannot
+                        store
+                        extremely large values, I implemented custom logic to handle numbers digit by digit. This
+                        required me to
+                        rethink arithmetic operations from first principles: breaking numbers into individual
+                        characters,
+                        aligning them properly, and manually simulating addition and subtraction the way they are
+                        performed on
+                        paper.
+                    </p>
+                </div>
+            </div>
+
+            <p>
+                From a computer science point of view, the project significantly improved my algorithmic thinking and
+                attention to edge cases. I had to manage carry and borrow operations, handle numbers of different
+                lengths, preserve leading zeros correctly, and ensure accurate results regardless of input size. Working
+                with string-based number representations also strengthened my understanding of data structures, memory
+                limitations, and abstraction.
+            </p>
+            <p>
+                A future improvement I would like to add is the ability to perform multiplication and
+                division.Additionally, I would like to work on removing the zeroes from the front of the resulting
+                number.
+            </p>
+
+        </div>
+
+        <!--Restaurant-->
+        <div class="project">
+
+            <h2>Restaurant orders</h2>
+            <p>
+                A C# Windows Forms application designed to help restaurant businesses complete their orders.
+            </p>
+            <div class="project-content">
+                <div class="project-media">
+                    <!-- IMAGE 
+                    <img src="assets/images/numbers in bg.png" class="project-img"> -->
+
+                    <!-- VIDEO -->
+                    <video controls class="project-video">
+                        <source src="assets/videos/restaurant.mp4" type="video/mp4">
+                    </video>
+
+                    <!-- DOWNLOAD -->
+                    <a href="assets/apps/Restaurant.exe" class="download">Download application</a>
+                </div>
+                <div class="project-text">
+                    <p>
+                        The interface allows users to choose between two kinds of soups, three main dishes and two
+                        desserts.
+                        They can see the single price per dish and write in the box what quantity is added to their
+                        order. On
+                        the right of the interface, the whole order is shown with the quantity and total price per item.
+                        Below
+                        that users can see the total price and optionally add a tip. On the bottom right they can choose
+                        between
+                        paying in cash or by card. Whenever the prder is complete, the bottom button is pressed to
+                        finish.
+                    </p>
+                    <p>
+                        The development of this application has improved my understanding of different data structures
+                        and
+                        working with files (stream readers and stream writers). It has also prepared me for work with
+                        data
+                        bases, information retrieval and complex connections.
+                    </p>
+                </div>
+            </div>
+
+            <p>
+                At the moment, the menu is static. Orders are stored in a text file, which is not very efficient. They
+                are stored only until a new order is created.A future improvement I would work on, is creating a
+                database for the restaurant, so that the orders
+                can be stored and retrieved. This would be crucial for bringing this program to the market
+            </p>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        &copy; Ralitsa Raykova | Artificial Intelligence aspiring AI student
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

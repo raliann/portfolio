@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Pre-Lock Screen -->
+    <div class="pre-lock-screen active">
+        <div class="status-bar">
+            <span class="time">12:34</span>
+            <div class="status-icons">
+                <img src="icons/Upper Right/menu_white.png" alt="Status Icons" class="status-icon-image">
+            </div>
+        </div>
+        
+        <img src="wallpaper.png" alt="Lock Screen Wallpaper" class="wallpaper">
+        
+        <div class="lock-indicator">
+            <img src="icons/Lock screen/locket.png" alt="Lock" class="lock-icon">
+            <div class="date">Tuesday, June 25</div>
+            <div class="time">12:34</div>
+        </div>
+        
+        <div class="bottom-controls">
+            <div class="flashlight-btn">
+                <img src="icons/Lock screen/flashlight-off.png" alt="Flashlight" class="control-icon">
+            </div>
+            <div class="unlock-indicator">
+                <div class="unlock-line"></div>
+            </div>
+            <div class="camera-btn">
+                <img src="icons/Lock screen/camera-light.png" alt="Camera" class="control-icon">
+            </div>
+        </div>
+    </div>
+
+    <!-- Passcode Screen -->
+    <div class="lock-screen">
+        <div class="status-bar">
+            <span class="time">12:34</span>
+            <div class="status-icons">
+                <img src="icons/Upper Right/menu_white.png" alt="Status Icons" class="status-icon-image">
+            </div>
+        </div>
+        
+        <div class="passcode-background"></div>
+        
+        <div class="lock-indicator">
+            <img src="icons/Lock screen/locket.png" alt="Lock" class="lock-icon">
+            <div class="unlock-text">Enter Passcode</div>
+        </div>
+        
+        <div class="passcode-container">
+            <div class="passcode-error hidden">Incorrect Passcode. Try Again.</div>
+            <div class="passcode-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            
+            <div class="keypad">
+                <div class="row">
+                    <button class="key" data-value="1">1<div></div></button>
+                    <button class="key" data-value="2">2<div>ABC</div></button>
+                    <button class="key" data-value="3">3<div>DEF</div></button>
+                </div>
+                <div class="row">
+                    <button class="key" data-value="4">4<div>GHI</div></button>
+                    <button class="key" data-value="5">5<div>JKL</div></button>
+                    <button class="key" data-value="6">6<div>MNO</div></button>
+                </div>
+                <div class="row">
+                    <button class="key" data-value="7">7<div>PQRS</div></button>
+                    <button class="key" data-value="8">8<div>TUV</div></button>
+                    <button class="key" data-value="9">9<div>WXYZ</div></button>
+                </div>
+                <div class="row">
+                    <button class="key empty"></button>
+                    <button class="key" data-value="0">0</button>
+                    <button class="key delete">⌫</button>
+                </div>
+            </div>
+            
+            <div class="emergency-call">Emergency</div>
+        </div>
+    </div>
+
+    <!-- iPhone Container -->
+    <div class="iphone-container">
+        <div class="iphone-frame">
+            <div class="screen">
+                <img src="wallpaper.png" alt="Home Screen Wallpaper" class="home-screen-wallpaper">
+                
+                <div class="screen-content">
+                    <!-- Home Screen -->
+                    <div class="view home-screen active">
+                        <div class="status-bar">
+                            <span class="time">--:--</span>
+                            <div class="status-icons">
+                                <img src="icons/Upper Right/menu_white.png" alt="Status Icons" class="status-icon-image">
+                            </div>
+                        </div>
+                        
+                        <div class="app-grid">
+                            <!-- Apps will be added here by JavaScript -->
+                        </div>
+                        
+                        <div class="dock">
+                            <!-- Dock apps will be added here by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Phone App -->
+                    <div class="view phone-app">
+                        <div class="status-bar">
+                            <span class="time">--:--</span>
+                            <div class="status-icons">
+                                <img src="icons/Upper Right/menu_white.png" alt="Status Icons" class="status-icon-image">
+                            </div>
+                        </div>
+                        
+                        <div class="app-header">
+                            <button class="back-button">←</button>
+                            <h1 class="phone-title">Recents</h1>
+                        </div>
+                        
+                        <div class="phone-search">
+                            <div class="search-container">
+                                <img src="phone/magnifying-glass.png" alt="Search" class="search-icon">
+                                <span class="search-text">Search</span>
+                                <img src="phone/dictation.png" alt="Dictation" class="dictation-icon">
+                            </div>
+                        </div>
+                        
+                        <div class="phone-content">
+                            <div class="phone-tab recents-tab active">
+                                <div class="call-list">
+                                    <!-- Call list will be populated by JavaScript -->
+                                </div>
+                            </div>
+                            
+                            <div class="phone-tab contacts-tab">
+                                <div class="contacts-list">
+                                    <div class="contact-item">
+                                        <div class="contact-avatar" style="background-color: #FF6B6B;">
+                                            <span>AB</span>
+                                        </div>
+                                        <div class="contact-info">
+                                            <div class="contact-name">Alice Brown</div>
+                                            <div class="contact-number">mobile</div>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <div class="contact-avatar" style="background-color: #4ECDC4;">
+                                            <span>BJ</span>
+                                        </div>
+                                        <div class="contact-info">
+                                            <div class="contact-name">Bob Johnson</div>
+                                            <div class="contact-number">mobile</div>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <div class="contact-avatar" style="background-color: #45B7D1;">
+                                            <span>CD</span>
+                                        </div>
+                                        <div class="contact-info">
+                                            <div class="contact-name">Carol Davis</div>
+                                            <div class="contact-number">home</div>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <div class="contact-avatar" style="background-color: #F7DC6F;">
+                                            <span>DW</span>
+                                        </div>
+                                        <div class="contact-info">
+                                            <div class="contact-name">David Wilson</div>
+                                            <div class="contact-number">work</div>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <div class="contact-avatar" style="background-color: #BB8FCE;">
+                                            <span>EG</span>
+                                        </div>
+                                        <div class="contact-info">
+                                            <div class="contact-name">Emily Garcia</div>
+                                            <div class="contact-number">mobile</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="phone-tab keypad-tab">
+                                <div class="phone-keypad">
+                                    <div class="number-display">
+                                        <span class="phone-number"></span>
+                                    </div>
+                                    <div class="keypad">
+                                        <div class="keypad-row">
+                                            <button class="key" data-value="1">1<span></span></button>
+                                            <button class="key" data-value="2">2<span>ABC</span></button>
+                                            <button class="key" data-value="3">3<span>DEF</span></button>
+                                        </div>
+                                        <div class="keypad-row">
+                                            <button class="key" data-value="4">4<span>GHI</span></button>
+                                            <button class="key" data-value="5">5<span>JKL</span></button>
+                                            <button class="key" data-value="6">6<span>MNO</span></button>
+                                        </div>
+                                        <div class="keypad-row">
+                                            <button class="key" data-value="7">7<span>PQRS</span></button>
+                                            <button class="key" data-value="8">8<span>TUV</span></button>
+                                            <button class="key" data-value="9">9<span>WXYZ</span></button>
+                                        </div>
+                                        <div class="keypad-row">
+                                            <button class="key" data-value="*">*<span></span></button>
+                                            <button class="key" data-value="0">0<span>+</span></button>
+                                            <button class="key" data-value="#">#<span></span></button>
+                                        </div>
+                                    </div>
+                                    <button class="call-button">📞</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="phone-tabs-container">
+                            <button class="phone-tab-button active" data-tab="recents">
+                                <img src="phone/recents-blue.png" alt="Recents" class="tab-icon">
+                                <span>Recents</span>
+                            </button>
+                            <button class="phone-tab-button" data-tab="contacts">
+                                <img src="phone/contacts-gray.png" alt="Contacts" class="tab-icon">
+                                <span>Contacts</span>
+                            </button>
+                            <button class="phone-tab-button" data-tab="keypad">
+                                <img src="phone/keypad-gray.png" alt="Keypad" class="tab-icon">
+                                <span>Keypad</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Messages App -->
+                    <div class="view messages-app">
+                        <div class="status-bar">
+                            <span class="time">--:--</span>
+                            <div class="status-icons">
+                                <img src="icons/Upper Right/menu_white.png" alt="Status Icons" class="status-icon-image">
+                            </div>
+                        </div>
+                        
+                        <div class="app-header">
+                            <button class="back-button">←</button>
+                            <h1 class="app-title">Messages</h1>
+                        </div>
+                        
+                        <div class="messages-content">
+                            <div class="messages-list active">
+                                <div class="message-thread">
+                                    <div class="thread-avatar" style="background-color: #007AFF;">
+                                        <span>J</span>
+                                    </div>
+                                    <div class="thread-info">
+                                        <div class="thread-name">John</div>
+                                        <div class="thread-preview">Hey, are we still on for dinner tonight?</div>
+                                    </div>
+                                    <div class="thread-time">2:34 PM</div>
+                                </div>
+                                
+                                <div class="message-thread">
+                                    <div class="thread-avatar" style="background-color: #34C759;">
+                                        <span>M</span>
+                                    </div>
+                                    <div class="thread-info">
+                                        <div class="thread-name">Mom</div>
+                                        <div class="thread-preview">Don't forget to call grandma today</div>
+                                    </div>
+                                    <div class="thread-time">1:15 PM</div>
+                                </div>
+                                
+                                <div class="message-thread">
+                                    <div class="thread-avatar" style="background-color: #FF3B30;">
+                                        <span>S</span>
+                                    </div>
+                                    <div class="thread-info">
+                                        <div class="thread-name">Sarah</div>
+                                        <div class="thread-preview">Thanks for the help with the project!</div>
+                                    </div>
+                                    <div class="thread-time">12:45 PM</div>
+                                </div>
+                                
+                                <div class="message-thread">
+                                    <div class="thread-avatar" style="background-color: #FF9500;">
+                                        <span>D</span>
+                                    </div>
+                                    <div class="thread-info">
+                                        <div class="thread-name">David</div>
+                                        <div class="thread-preview">Let's meet at the coffee shop</div>
+                                    </div>
+                                    <div class="thread-time">11:30 AM</div>
+                                </div>
+                            </div>
+                            
+                            <div class="chat-view">
+                                <div class="chat-header">
+                                    <button class="chat-back-button">←</button>
+                                    <div class="chat-contact-info">
+                                        <div class="chat-contact-name">John</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="chat-messages">
+                                    <div class="message received">
+                                        <div class="message-bubble">Hey, are we still on for dinner tonight?</div>
+                                        <div class="message-time">2:30 PM</div>
+                                    </div>
+                                    <div class="message sent">
+                                        <div class="message-bubble">Yes! I'll pick you up at 7</div>
+                                        <div class="message-time">2:32 PM</div>
+                                    </div>
+                                    <div class="message received">
+                                        <div class="message-bubble">Perfect, see you then!</div>
+                                        <div class="message-time">2:34 PM</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="message-input">
+                                    <input type="text" placeholder="iMessage" class="message-text-input">
+                                    <button class="send-button">↑</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Messenger App -->
+                    <div class="view messenger-app">
+                        <div class="status-bar">
+                            <span class="time">--:--</span>
+                            <div class="status-icons">
+                                <img src="icons/Upper Right/menu_white.png" alt="Status Icons" class="status-icon-image">
+                            </div>
+                        </div>
+                        
+                        <div class="messenger-header">
+                            <button class="back-button">←</button>
+                            <h1 class="messenger-title">Messenger</h1>
+                        </div>
+                        
+                        <div class="messenger-search">
+                            <div class="search-container">
+                                <img src="phone/magnifying-glass.png" alt="Search" class="search-icon">
+                                <span class="search-text">Ask Meta AI or search</span>
+                            </div>
+                        </div>
+                        
+                        <div class="active-friends">
+                            <div class="active-friend">
+                                <div class="friend-avatar" style="background-color: #FF6B6B;">
+                                    <span>A</span>
+                                </div>
+                                <div class="online-indicator"></div>
+                            </div>
+                            <div class="active-friend">
+                                <div class="friend-avatar" style="background-color: #4ECDC4;">
+                                    <span>B</span>
+                                </div>
+                                <div class="online-indicator"></div>
+                            </div>
+                            <div class="active-friend">
+                                <div class="friend-avatar" style="background-color: #45B7D1;">
+                                    <span>C</span>
+                                </div>
+                                <div class="online-indicator"></div>
+                            </div>
+                            <div class="active-friend">
+                                <div class="friend-avatar" style="background-color: #F7DC6F;">
+                                    <span>D</span>
+                                </div>
+                                <div class="online-indicator"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="messenger-chats">
+                            <div class="messenger-chat">
+                                <div class="chat-avatar" style="background-color: #007AFF;">
+                                    <span>J</span>
+                                </div>
+                                <div class="chat-info">
+                                    <div class="chat-name">Jessica</div>
+                                    <div class="chat-preview">You: Hey! How's your day going?</div>
+                                </div>
+                                <div class="chat-time">3:45 PM</div>
+                            </div>
+                            
+                            <div class="messenger-chat">
+                                <div class="chat-avatar" style="background-color: #34C759;">
+                                    <span>M</span>
+                                </div>
+                                <div class="chat-info">
+                                    <div class="chat-name">Michael</div>
+                                    <div class="chat-preview">Can we meet tomorrow?</div>
+                                </div>
+                                <div class="chat-time">2:20 PM</div>
+                            </div>
+                            
+                            <div class="messenger-chat">
+                                <div class="chat-avatar" style="background-color: #FF3B30;">
+                                    <span>L</span>
+                                </div>
+                                <div class="chat-info">
+                                    <div class="chat-name">Lisa</div>
+                                    <div class="chat-preview">Thanks for the help!</div>
+                                </div>
+                                <div class="chat-time">1:15 PM</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Instagram App -->
+                    <div class="view instagram-app">
+                        <div class="status-bar">
+                            <span class="time">--:--</span>
+                            <div class="status-icons">
+                                <img src="icons/Upper Right/menu_white.png" alt="Status Icons" class="status-icon-image">
+                            </div>
+                        </div>
+                        
+                        <div class="instagram-content">
+                            <div class="instagram-feed active">
+                                <div class="instagram-header">
+                                    <button class="back-button">←</button>
+                                    <h1 class="instagram-title">Instagram</h1>
+                                    <div class="instagram-actions">
+                                        <span class="heart-icon">♡</span>
+                                        <span class="messenger-icon">✉</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="stories-container">
+                                    <div class="story">
+                                        <div class="story-avatar" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);">
+                                            <div class="story-image" style="background-color: #FF6B6B;">
+                                                <span>A</span>
+                                            </div>
+                                        </div>
+                                        <span class="story-name">Alex</span>
+                                    </div>
+                                    <div class="story">
+                                        <div class="story-avatar" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);">
+                                            <div class="story-image" style="background-color: #4ECDC4;">
+                                                <span>B</span>
+                                            </div>
+                                        </div>
+                                        <span class="story-name">Bella</span>
+                                    </div>
+                                    <div class="story">
+                                        <div class="story-avatar" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);">
+                                            <div class="story-image" style="background-color: #45B7D1;">
+                                                <span>C</span>
+                                            </div>
+                                        </div>
+                                        <span class="story-name">Chris</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="posts-container">
+                                    <div class="post">
+                                        <div class="post-header">
+                                            <div class="post-avatar" style="background-color: #FF6B6B;">
+                                                <span>A</span>
+                                            </div>
+                                            <div class="post-user">alexsmith</div>
+                                        </div>
+                                        <div class="post-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">
+                                            Beautiful sunset today! 🌅
+                                        </div>
+                                        <div class="post-actions">
+                                            <span class="action-icon">♡</span>
+                                            <span class="action-icon">💬</span>
+                                            <span class="action-icon">✈</span>
+                                        </div>
+                                        <div class="post-likes">124 likes</div>
+                                        <div class="post-caption">
+                                            <strong>alexsmith</strong> Amazing view from my hike today!
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="post">
+                                        <div class="post-header">
+                                            <div class="post-avatar" style="background-color: #4ECDC4;">
+                                                <span>B</span>
+                                            </div>
+                                            <div class="post-user">bella_jones</div>
+                                        </div>
+                                        <div class="post-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">
+                                            Coffee time ☕
+                                        </div>
+                                        <div class="post-actions">
+                                            <span class="action-icon">♡</span>
+                                            <span class="action-icon">💬</span>
+                                            <span class="action-icon">✈</span>
+                                        </div>
+                                        <div class="post-likes">89 likes</div>
+                                        <div class="post-caption">
+                                            <strong>bella_jones</strong> Perfect start to the morning
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="post">
+                                        <div class="post-header">
+                                            <div class="post-avatar" style="background-color: #45B7D1;">
+                                                <span>C</span>
+                                            </div>
+                                            <div class="post-user">chris_photo</div>
+                                        </div>
+                                        <div class="post-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">
+                                            City lights 🌃
+                                        </div>
+                                        <div class="post-actions">
+                                            <span class="action-icon">♡</span>
+                                            <span class="action-icon">💬</span>
+                                            <span class="action-icon">✈</span>
+                                        </div>
+                                        <div class="post-likes">256 likes</div>
+                                        <div class="post-caption">
+                                            <strong>chris_photo</strong> Night photography session
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="instagram-messages">
+                                <div class="instagram-messages-header">
+                                    <button class="messages-back-button">←</button>
+                                    <h1 class="messages-title">Direct</h1>
+                                    <span class="new-message-icon">✎</span>
+                                </div>
+                                
+                                <div class="instagram-messages-list">
+                                    <div class="instagram-message">
+                                        <div class="message-avatar" style="background-color: #FF6B6B;">
+                                            <span>A</span>
+                                        </div>
+                                        <div class="message-info">
+                                            <div class="message-name">alexsmith</div>
+                                            <div class="message-preview">Liked your photo</div>
+                                        </div>
+                                        <div class="message-time">2h</div>
+                                    </div>
+                                    
+                                    <div class="instagram-message">
+                                        <div class="message-avatar" style="background-color: #4ECDC4;">
+                                            <span>B</span>
+                                        </div>
+                                        <div class="message-info">
+                                            <div class="message-name">bella_jones</div>
+                                            <div class="message-preview">Hey! Love your stories</div>
+                                        </div>
+                                        <div class="message-time">4h</div>
+                                    </div>
+                                    
+                                    <div class="instagram-message">
+                                        <div class="message-avatar" style="background-color: #45B7D1;">
+                                            <span>C</span>
+                                        </div>
+                                        <div class="message-info">
+                                            <div class="message-name">chris_photo</div>
+                                            <div class="message-preview">Thanks for the follow!</div>
+                                        </div>
+                                        <div class="message-time">1d</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photos App -->
+                    <div class="view photos-app">
+                        <div class="status-bar">
+                            <span class="time">--:--</span>
+                            <div class="status-icons">
+                                <img src="icons/Upper Right/menu_white.png" alt="Status Icons" class="status-icon-image">
+                            </div>
+                        </div>
+                        
+                        <div class="app-header">
+                            <button class="back-button">←</button>
+                            <h1 class="app-title">Photos</h1>
+                        </div>
+                        
+                        <div class="photos-grid">
+                            <div class="photo-square" style="background-color: #FF6B6B;"></div>
+                            <div class="photo-square" style="background-color: #4ECDC4;"></div>
+                            <div class="photo-square" style="background-color: #45B7D1;"></div>
+                            <div class="photo-square" style="background-color: #F7DC6F;"></div>
+                            <div class="photo-square" style="background-color: #BB8FCE;"></div>
+                            <div class="photo-square" style="background-color: #85C1E9;"></div>
+                            <div class="photo-square" style="background-color: #F8C471;"></div>
+                            <div class="photo-square" style="background-color: #82E0AA;"></div>
+                            <div class="photo-square" style="background-color: #F1948A;"></div>
+                            <div class="photo-square" style="background-color: #D7BDE2;"></div>
+                            <div class="photo-square" style="background-color: #A9DFBF;"></div>
+                            <div class="photo-square" style="background-color: #F9E79F;"></div>
+                            <div class="photo-square" style="background-color: #AED6F1;"></div>
+                            <div class="photo-square" style="background-color: #FADBD8;"></div>
+                            <div class="photo-square" style="background-color: #E8DAEF;"></div>
+                            <div class="photo-square" style="background-color: #D5F4E6;"></div>
+                            <div class="photo-square" style="background-color: #FCF3CF;"></div>
+                            <div class="photo-square" style="background-color: #EBDEF0;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Google App -->
+                    <div class="view google-app">
+                        <div class="status-bar">
+                            <span class="time">--:--</span>
+                            <div class="status-icons">
+                                <img src="icons/Upper Right/menu_white.png" alt="Status Icons" class="status-icon-image">
+                            </div>
+                        </div>
+                        
+                        <div class="app-header">
+                            <button class="back-button">←</button>
+                            <h1 class="app-title">Google</h1>
+                        </div>
+                        
+                        <div class="google-content">
+                            <div class="google-logo">Google</div>
+                            
+                            <div class="search-history">
+                                <h3>Recent searches</h3>
+                                <div class="search-item">
+                                    <span class="search-icon">🔍</span>
+                                    <span class="search-text">iPhone 16 Pro Max specs</span>
+                                </div>
+                                <div class="search-item">
+                                    <span class="search-icon">🔍</span>
+                                    <span class="search-text">best restaurants near me</span>
+                                </div>
+                                <div class="search-item">
+                                    <span class="search-icon">🔍</span>
+                                    <span class="search-text">weather forecast</span>
+                                </div>
+                                <div class="search-item">
+                                    <span class="search-icon">🔍</span>
+                                    <span class="search-text">React Native tutorial</span>
+                                </div>
+                                <div class="search-item">
+                                    <span class="search-icon">🔍</span>
+                                    <span class="search-text">coffee shops downtown</span>
+                                </div>
+                                <div class="search-item">
+                                    <span class="search-icon">🔍</span>
+                                    <span class="search-text">flight status</span>
+                                </div>
+                                <div class="search-item">
+                                    <span class="search-icon">🔍</span>
+                                    <span class="search-text">online shopping deals</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Enhanced Notes App -->
+                    <div class="view notes-app">
+                        <div class="status-bar">
+                            <span class="time">--:--</span>
+                            <div class="status-icons">
+                                <img src="icons/Upper Right/menu_white.png" alt="Status Icons" class="status-icon-image">
+                            </div>
+                        </div>
+                        
+                        <div class="notes-content">
+                            <div class="notes-list active">
+                                <div class="app-header">
+                                    <button class="back-button">←</button>
+                                    <h1 class="app-title">Notes</h1>
+                                    <button class="new-note">+</button>
+                                </div>
+                                
+                                <div class="notes-tabs">
+                                    <button class="notes-tab active" data-period="7days">Previous 7 Days</button>
+                                    <button class="notes-tab" data-period="30days">Previous 30 Days</button>
+                                    <button class="notes-tab" data-period="older">1 Month Ago</button>
+                                </div>
+                                
+                                <div class="notes-container">
+                                    <div class="notes-period active" data-period="7days">
+                                        <div class="note-item">
+                                            <div class="note-title">Shopping List</div>
+                                            <div class="note-preview">Milk, Bread, Eggs, Apples, Chicken...</div>
+                                            <div class="note-date">Today 3:45 PM</div>
+                                        </div>
+                                        <div class="note-item">
+                                            <div class="note-title">Meeting Notes</div>
+                                            <div class="note-preview">Discussed project timeline and deliverables...</div>
+                                            <div class="note-date">Yesterday 2:30 PM</div>
+                                        </div>
+                                        <div class="note-item">
+                                            <div class="note-title">Weekend Plans</div>
+                                            <div class="note-preview">Visit the art museum and grab lunch...</div>
+                                            <div class="note-date">3 days ago</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="notes-period" data-period="30days">
+                                        <div class="note-item">
+                                            <div class="note-title">Book Recommendations</div>
+                                            <div class="note-preview">The Great Gatsby, To Kill a Mockingbird...</div>
+                                            <div class="note-date">2 weeks ago</div>
+                                        </div>
+                                        <div class="note-item">
+                                            <div class="note-title">Recipe Ideas</div>
+                                            <div class="note-preview">Pasta carbonara, Thai green curry...</div>
+                                            <div class="note-date">3 weeks ago</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="notes-period" data-period="older">
+                                        <div class="note-item">
+                                            <div class="note-title">Travel Plans</div>
+                                            <div class="note-preview">Europe trip itinerary for summer...</div>
+                                            <div class="note-date">2 months ago</div>
+                                        </div>
+                                        <div class="note-item">
+                                            <div class="note-title">Goals for the Year</div>
+                                            <div class="note-preview">Learn Spanish, read 24 books...</div>
+                                            <div class="note-date">3 months ago</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="notes-count">8 Notes</div>
+                            </div>
+                            
+                            <div class="note-editor">
+                                <div class="editor-header">
+                                    <button class="editor-back-button">← Notes</button>
+                                    <button class="editor-done">Done</button>
+                                </div>
+                                <textarea placeholder="Start writing..." class="note-textarea"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ChatGPT App (keep existing) -->
+                    <div class="view chatgpt-app">
+                        <div class="status-bar">
+                            <span class="time">--:--</span>
+                            <div class="status-icons">
+                                <img src="icons/Upper Right/menu_white.png" alt="Status Icons" class="status-icon-image">
+                            </div>
+                        </div>
+                        
+                        <div class="app-header">
+                            <button class="back-button">←</button>
+                            <h1 class="app-title">ChatGPT</h1>
+                        </div>
+                        
+                        <div class="chat-search">
+                            <div class="search-container">
+                                <img src="phone/magnifying-glass.png" alt="Search" class="search-icon">
+                                <span class="search-text">Search</span>
+                            </div>
+                        </div>
+                        
+                        <div class="chat-list">
+                            <div class="chat-item">
+                                <div class="chat-info">
+                                    <div class="chat-name">Gabi</div>
+                                    <div class="chat-preview">Last message preview...</div>
+                                </div>
+                                <div class="chat-time">2:34 PM</div>
+                            </div>
+                            <div class="chat-item">
+                                <div class="chat-info">
+                                    <div class="chat-name">Rali</div>
+                                    <div class="chat-preview">Another conversation...</div>
+                                </div>
+                                <div class="chat-time">1:15 PM</div>
+                            </div>
+                            <div class="chat-item">
+                                <div class="chat-info">
+                                    <div class="chat-name">MVR</div>
+                                    <div class="chat-preview">Recent discussion...</div>
+                                </div>
+                                <div class="chat-time">12:45 PM</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chat Content View -->
+                    <div class="view chat-content-view">
+                        <div class="app-header">
+                            <button class="back-button">←</button>
+                            <h1 class="app-title">Chat</h1>
+                        </div>
+                        
+                        <div class="chat-content-container">
+                            <iframe id="chat-iframe" src=""></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

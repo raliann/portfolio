@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="115.32253mm"
+   height="20.998381mm"
+   viewBox="0 0 115.32253 20.998381"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="drawing.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.3843855"
+     inkscape:cx="548.98003"
+     inkscape:cy="342.75135"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g7" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-42.728539,-30.0332)">
+    <g
+       id="g6"
+       transform="matrix(7.2634699,0,0,7.2634699,53.217103,140.45289)"
+       inkscape:export-filename="dataLines_dark.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       style="fill:#ffffff;fill-opacity:1">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:1.73113"
+         id="rect2"
+         width="0.72072071"
+         height="1.6113256"
+         x="-0.19819826"
+         y="-13.997425"
+         rx="0.2" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:1.4044"
+         id="rect3"
+         width="0.72072071"
+         height="1.0604891"
+         x="-1.4440155"
+         y="-13.436293"
+         rx="0.2" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:2.04315"
+         id="rect4"
+         width="0.72072071"
+         height="2.2445302"
+         x="1.0424709"
+         y="-14.625482"
+         rx="0.2" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:2.28641"
+         id="rect5"
+         width="0.72072071"
+         height="2.8108108"
+         x="2.2779922"
+         y="-15.202058"
+         rx="0.2" />
+    </g>
+    <g
+       id="g7"
+       transform="matrix(2.5938543,0,0,2.5938543,-272.86543,-304.06862)"
+       inkscape:export-filename="battery_dark.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <g
+         id="g8"
+         transform="translate(4.4881736)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#e4e4e1;stroke-width:0.527625;stroke-dasharray:none;stroke-opacity:1"
+           id="rect1"
+           width="14.814427"
+           height="7.1113315"
+           x="145.20192"
+           y="129.52545"
+           rx="1.8570527" />
+        <rect
+           style="fill:#fbfaf9;fill-opacity:1;stroke:none;stroke-width:0.616176;stroke-dasharray:none;stroke-opacity:1"
+           id="rect6"
+           width="11.487073"
+           height="5.6083941"
+           x="146.021"
+           y="130.3"
+           rx="1.313" />
+        <path
+           id="path6"
+           style="fill:#ffffff;fill-opacity:1;stroke-width:0.543999"
+           inkscape:transform-center-x="-0.38853125"
+           inkscape:transform-center-y="-1.6259608e-06"
+           d="m 161.64126,133.31762 c 0.021,0.76158 -0.86153,1.29524 -0.86153,1.29524 v -2.69184 c 0,0 0.83862,0.56669 0.86153,1.3966 z"
+           sodipodi:nodetypes="sccs" />
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:9.71215px;line-height:1.25;font-family:'Nirmala UI';-inkscape-font-specification:'Nirmala UI';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0.416016"
+       x="142.00758"
+       y="136.34932"
+       id="text1"
+       transform="matrix(2.5938543,0,0,2.5938543,-272.86543,-304.06861)"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="stroke:none;stroke-width:0.416016"
+         x="142.00758"
+         y="136.34932">4G</tspan></text>
+  </g>
+</svg>
